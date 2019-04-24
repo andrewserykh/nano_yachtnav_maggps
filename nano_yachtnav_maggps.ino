@@ -70,7 +70,7 @@ LED - прием пакетов с GPS
 #define COMPASS_FILTER  10    //Максимальное отклонение для отброса показаний
 
 HMC5883 compass;
-SoftwareSerial SSerialGPS(10, 11); // RX, TX
+SoftwareSerial SSerialGPS(7, 8); // RX, TX [10,11]
 TinyGPSPlus gps_parser;
 
 //для поиска тега раскомментировать тут и в программе область заполнения таблицы регистров
@@ -90,7 +90,12 @@ long ms_compass;
 long ms_gps;
 
 void setup() {
-  pinMode(LED, OUTPUT);
+  pinMode(2,OUTPUT);    //D2
+  pinMode(4,OUTPUT);    //D4
+  pinMode(12,OUTPUT);   //D12
+  pinMode(LED, OUTPUT); //D13 LED
+  
+  pinMode(A7,INPUT);
   //Подсвечиваем запуск контроллера диодом
   digitalWrite(LED, HIGH);
   delay(1000);
@@ -122,7 +127,8 @@ void loop() {
 
   state = slave.poll( mbdata, 32 ); //Обработчик MODBUS
 
-  
+  digitalWrite(2,(digitalRead(A7)));
+  //if ( digitalRead(A7) ) digitalWrite(2,!(digitalRead(2)));
 
   if (millis() - ms_compass > 50) {
     compass.read(&compass_x,&compass_y,&compass_z,&compass_hdg);
@@ -148,7 +154,6 @@ void loop() {
     digitalWrite(LED, HIGH);
     char temp = SSerialGPS.read();
     gps_parser.encode(temp);
-    //Serial.write(SSerialGPS.read());
     digitalWrite(LED, LOW);
   }
 
@@ -172,6 +177,9 @@ void loop() {
     u_double = gps_parser.location.lng();
     mbdata[7] = u_ints[0];
     mbdata[8] = u_ints[1];
+
+  Serial.println(gps_parser.location.lng());
+  Serial.println(gps_parser.location.lat());
         
     mbdata[9] = (uint16_t)gps_parser.altitude.meters();
 
@@ -183,6 +191,5 @@ void loop() {
     mbdata[15] = (uint16_t)gps_parser.date.year();
    
   }
-
 
 } //loop

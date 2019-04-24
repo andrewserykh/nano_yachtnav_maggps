@@ -1,0 +1,267 @@
+ (routes 
+  (resolution mm 100000)
+  (parser
+  )
+  (parser
+  )
+  (structure_out
+   (layer TOP (type signal)
+   )
+   (layer I1 (type signal)
+   )
+   (layer I2 (type signal)
+   )
+   (layer I3 (type signal)
+   )
+   (layer I4 (type signal)
+   )
+   (layer I5 (type signal)
+   )
+   (layer I6 (type signal)
+   )
+   (layer I7 (type signal)
+   )
+   (layer I8 (type signal)
+   )
+   (layer I9 (type signal)
+   )
+   (layer I10 (type signal)
+   )
+   (layer I11 (type signal)
+   )
+   (layer I12 (type signal)
+   )
+   (layer I13 (type signal)
+   )
+   (layer I14 (type signal)
+   )
+   (layer BOT (type signal)
+   )
+  )
+  (library_out
+  (padstack $VIA#0_SIGNAL
+   (shape (circ TOP 76200 0 0))
+   (shape (circ I1 76200 0 0))
+   (shape (circ I2 76200 0 0))
+   (shape (circ I3 76200 0 0))
+   (shape (circ I4 76200 0 0))
+   (shape (circ I5 76200 0 0))
+   (shape (circ I6 76200 0 0))
+   (shape (circ I7 76200 0 0))
+   (shape (circ I8 76200 0 0))
+   (shape (circ I9 76200 0 0))
+   (shape (circ I10 76200 0 0))
+   (shape (circ I11 76200 0 0))
+   (shape (circ I12 76200 0 0))
+   (shape (circ I13 76200 0 0))
+   (shape (circ I14 76200 0 0))
+   (shape (circ BOT 76200 0 0))
+  )
+  (padstack $VIA#0_POWER
+   (shape (circ TOP 76200 0 0))
+   (shape (circ I1 76200 0 0))
+   (shape (circ I2 76200 0 0))
+   (shape (circ I3 76200 0 0))
+   (shape (circ I4 76200 0 0))
+   (shape (circ I5 76200 0 0))
+   (shape (circ I6 76200 0 0))
+   (shape (circ I7 76200 0 0))
+   (shape (circ I8 76200 0 0))
+   (shape (circ I9 76200 0 0))
+   (shape (circ I10 76200 0 0))
+   (shape (circ I11 76200 0 0))
+   (shape (circ I12 76200 0 0))
+   (shape (circ I13 76200 0 0))
+   (shape (circ I14 76200 0 0))
+   (shape (circ BOT 76200 0 0))
+  )
+  (padstack PS3
+   (shape (circ TOP 76200 0 0))
+   (shape (circ I1 76200 0 0))
+   (shape (circ I2 76200 0 0))
+   (shape (circ I3 76200 0 0))
+   (shape (circ I4 76200 0 0))
+   (shape (circ I5 76200 0 0))
+   (shape (circ I6 76200 0 0))
+   (shape (circ I7 76200 0 0))
+   (shape (circ I8 76200 0 0))
+   (shape (circ I9 76200 0 0))
+   (shape (circ I10 76200 0 0))
+   (shape (circ I11 76200 0 0))
+   (shape (circ I12 76200 0 0))
+   (shape (circ I13 76200 0 0))
+   (shape (circ I14 76200 0 0))
+   (shape (circ BOT 76200 0 0))
+  )
+  )
+  (network_out
+   (Net 12V 
+   (rule
+   )
+   )
+   (Net 27 
+   (rule
+   )
+   )
+   (Net 5V 
+   (rule
+   )
+   (wire (path BOT 25400  -9774000 -1980000 -9774000 -455137 -8699500 -455137
+     -8699500 3937000)
+    (connect (terminal pin "ARDUINO NANO2"-11) (terminal wire))
+   )
+   (wire (path TOP 25400  -8699500 4191000 4699000 4191000)
+    (connect (terminal via) (terminal pin SBX12-5_2-0))
+   )
+   (wire (path BOT 25400  -8699500 3937000 -8699500 4191000)
+    (connect (terminal wire) (terminal via))
+   )
+   (wire (path TOP 25400  4699000 4191000 4699000 4762500 10414000 4762500)
+    (connect (terminal pin SBX12-5_2-0) (terminal via))
+   )
+   (wire (path TOP 25400  10414000 4762500 10668000 4762500 10668000 2860040
+     10414000 2860040)
+    (connect (terminal via) (terminal pin GPS-4))
+   )
+   (wire (path BOT 25400  10414000 4762500 10414000 5384800)
+    (connect (terminal via) (terminal pin RELAY4-5))
+   )
+   (wire (path BOT 25400  10414000 5384800 10160000 5384800 10160000 9906000
+     10414000 9906000)
+    (connect (terminal pin RELAY4-5) (terminal pin ACCEL-0))
+   )
+   (wire (path BOT 25400  10414000 2860040 10160000 2860040 10160000 -441960
+     10414000 -441960)
+    (connect (terminal pin GPS-4) (terminal pin HMC5883L-4))
+   )
+   (wire (path BOT 25400  -8699500 3937000 -10452000 3937000 -10452000 9500000)
+    (connect (terminal wire) (terminal pin ESP32_2-1))
+   )
+   (via $VIA#0_SIGNAL -8699500 4191000)
+   (via $VIA#0_SIGNAL 10414000 4762500)
+   )
+   (Net ESPRX 
+   (rule
+   )
+   (wire (path BOT 25400  -12496000 -194000 -12496000 127000 -14668500 127000
+     -14668500 11222938 -13242000 11222938 -13242000 11750000)
+    (connect (terminal pin "ARDUINO NANO1"-0) (terminal pin ESP32_1-5))
+   )
+   )
+   (Net ESPTX 
+   (rule
+   )
+   (wire (path BOT 25400  -12242000 -194000 -12242000 -444500 -14795500 -444500
+     -14795500 12001500 -12988000 12001500 -12988000 11750000)
+    (connect (terminal pin "ARDUINO NANO1"-1) (terminal pin ESP32_1-6))
+   )
+   )
+   (Net GND 
+   (rule
+   )
+   (wire (path BOT 25400  -9266000 -1980000 -9266000 -1200682 -8572500 -1200682
+     -8572500 8001000)
+    (connect (terminal pin "ARDUINO NANO2"-13) (terminal wire))
+   )
+   (wire (path BOT 25400  6731000 7747000 6731000 8001000 -8572500 8001000)
+    (connect (terminal pin SBX12-5_1-0) (terminal wire))
+   )
+   (wire (path BOT 25400  -8572500 8001000 -8572500 9500000 -10198000 9500000)
+    (connect (terminal wire) (terminal pin ESP32_2-0))
+   )
+   (wire (path BOT 25400  10414000 4048760 10414000 4254500 10223500 4254500
+     10223500 4191000 6680200 4191000)
+    (connect (terminal pin GPS-1) (terminal pin SBX12-5_2-5))
+   )
+   (wire (path BOT 25400  6731000 7747000 6731000 7154836 6680200 7154836
+     6680200 4191000)
+    (connect (terminal pin SBX12-5_1-0) (terminal pin SBX12-5_2-5))
+   )
+   (wire (path BOT 25400  10604500 4048760 10731500 4048760 10731500 -45720
+     10414000 -45720)
+    (connect (terminal wire) (terminal pin HMC5883L-3))
+   )
+   (wire (path BOT 25400  10414000 7366000 10414000 7683500 10604500 7683500
+     10604500 9509760 10414000 9509760)
+    (connect (terminal pin RELAY4-0) (terminal pin ACCEL-1))
+   )
+   (wire (path BOT 25400  10414000 7366000 10414000 7175500 10604500 7175500
+     10604500 4048760)
+    (connect (terminal pin RELAY4-0) (terminal wire))
+   )
+   (wire (path BOT 25400  10604500 4048760 10414000 4048760)
+    (connect (terminal wire) (terminal pin GPS-1))
+   )
+   )
+   (Net GPSB 
+   (rule
+   )
+   (wire (path TOP 25400  -10096500 2222500 10096500 2222500 10096500 2463800
+     10414000 2463800)
+    (connect (terminal via) (terminal pin GPS-5))
+   )
+   (wire (path BOT 25400  -11480000 -194000 -11480000 2222500 -10096500 2222500)
+    (connect (terminal pin "ARDUINO NANO1"-4) (terminal via))
+   )
+   (via $VIA#0_SIGNAL -10096500 2222500)
+   )
+   (Net GPSRX 
+   (rule
+   )
+   (wire (path TOP 25400  -9969500 3619500 -9969500 3652520 10414000 3652520)
+    (connect (terminal via) (terminal pin GPS-2))
+   )
+   (wire (path BOT 25400  -9956000 -194000 -9956000 3619500 -9969500 3619500)
+    (connect (terminal pin "ARDUINO NANO1"-10) (terminal via))
+   )
+   (via $VIA#0_SIGNAL -9969500 3619500)
+   )
+   (Net GPSTX 
+   (rule
+   )
+   (wire (path TOP 25400  -10210000 -194000 -10210000 3256280 10414000 3256280)
+    (connect (terminal pin "ARDUINO NANO1"-9) (terminal pin GPS-3))
+   )
+   )
+   (Net NANOA4 
+   (rule
+   )
+   (wire (path TOP 25400  -10790000 -1980000 -10790000 -525603 -1699300 -525603
+     -1699300 746760 10414000 746760)
+    (connect (terminal pin "ARDUINO NANO2"-7) (terminal pin HMC5883L-1))
+   )
+   )
+   (Net NANOA5 
+   (rule
+   )
+   (wire (path TOP 25400  -10536000 -1980000 -10536000 -1413545 2138541 -1413545
+     2138541 350520 10414000 350520)
+    (connect (terminal pin "ARDUINO NANO2"-8) (terminal pin HMC5883L-2))
+   )
+   )
+   (Net PWM1 
+   (rule
+   )
+   (wire (path TOP 25400  10414000 9113520 8302443 9113520 8302443 9969500
+     -12734000 9969500 -12734000 11750000)
+    (connect (terminal pin ACCEL-2) (terminal pin ESP32_1-7))
+   )
+   )
+   (Net RELAY1 
+   (rule
+   )
+   )
+   (Net RELAY2 
+   (rule
+   )
+   )
+   (Net RELAY3 
+   (rule
+   )
+   )
+   (Net RELAY4 
+   (rule
+   )
+   )
+  )
+ )
