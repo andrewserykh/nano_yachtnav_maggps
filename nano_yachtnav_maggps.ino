@@ -1,4 +1,4 @@
-/* v2.10
+/* v2.11
 
 Простой протокол связи обмен структурой данных
 Функции управления выходными реле
@@ -158,9 +158,9 @@ void loop() {
    SerialEspInLen=0;
   }
 
-  digitalWrite( RELAY_IN1, bitRead( dataesp.Relay, 0 ));
-  digitalWrite( RELAY_IN2, bitRead( dataesp.Relay, 1 ));
-  digitalWrite( RELAY_IN3, bitRead( dataesp.Relay, 2 ));
-  digitalWrite( RELAY_IN4, bitRead( dataesp.Relay, 3 ));
+  digitalWrite( RELAY_IN1, !bitRead( dataesp.Relay, 0 ));
+  digitalWrite( RELAY_IN2, !bitRead( dataesp.Relay, 1 ));
+  digitalWrite( RELAY_IN3, !bitRead( dataesp.Relay, 2 ));
+  digitalWrite( RELAY_IN4, !bitRead( dataesp.Relay, 3 ));
 
 } //loop
