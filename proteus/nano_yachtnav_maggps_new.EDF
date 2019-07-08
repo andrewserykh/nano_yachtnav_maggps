@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 (PCB nano_yachtnav_maggps_new
  (parser
   (host_cad ARES)
@@ -528,3 +529,603 @@
  (wiring
  )
 )
+=======
+(PCB nano_yachtnav_maggps_new
+ (parser
+  (host_cad ARES)
+  (host_version 8.6 SP2)
+ )
+ (resolution mm 100000)
+ (unit mm)
+ (structure
+  (boundary (rect pcb -142.42160 -49.40160 13.45160 79.48160))
+  (boundary (path signal 0.20320 -142.32000 -49.30000 13.35000 -49.30000 13.35000 79.38000
+   -142.32000 79.38000 -142.32000 -49.30000))
+  (flip_style mirror_first)
+  (layer TOP (type signal) (direction off))
+  (layer I1 (type signal) (direction off))
+  (layer I2 (type signal) (direction off))
+  (layer I3 (type signal) (direction off))
+  (layer I4 (type signal) (direction off))
+  (layer I5 (type signal) (direction off))
+  (layer I6 (type signal) (direction off))
+  (layer I7 (type signal) (direction off))
+  (layer I8 (type signal) (direction off))
+  (layer I9 (type signal) (direction off))
+  (layer I10 (type signal) (direction off))
+  (layer I11 (type signal) (direction off))
+  (layer I12 (type signal) (direction off))
+  (layer I13 (type signal) (direction off))
+  (layer I14 (type signal) (direction off))
+  (layer BOT (type signal) (direction vertical))
+  (grid via  0.63500)
+  (grid wire 0.63500)
+  (control
+   (via_at_smd off)
+   (off_grid off)
+  )
+  (via
+   $VIA#0_SIGNAL
+   (spare
+    $VIA#0_POWER
+   )
+  )
+  (rule
+   (width 0.25400)
+   (clearance 0.38100)
+   (clearance 0.25400 (type wire_via))
+   (clearance 0.25400 (type wire_smd))
+   (clearance 0.25400 (type wire_pin))
+   (clearance 0.25400 (type wire_wire))
+   (clearance 0.25400 (type via_pin))
+   (clearance 0.25400 (type via_via))
+   (clearance 0.25400 (type via_smd))
+  )
+ )
+ (placement
+  (component "SIL-100-20_ESP1" (place ESP1 -117.78000 43.66000 front 0))
+  (component "SIL-100-20_ESP2" (place ESP2 -69.72000 20.96000 front 180))
+  (component "SIL-100-15_ARDUINO NANO1" (place "ARDUINO NANO1" -24.80700 25.30100 front 270
+  ))
+  (component "SIL-100-15_ARDUINO NANO2" (place "ARDUINO NANO2" -40.00000 -10.44000 front 90
+  ))
+  (component "SIL-100-06_RELAY4" (place RELAY4 -56.64000 57.50000 front 0))
+  (component "SIL-100-06_SBX12_2" (place SBX12_2 -105.29000 -10.84200 front 180))
+  (component "SIL-100-05_ACCEL" (place ACCEL -76.94000 57.50000 front 0))
+  (component "SIL-100-05_HMC5883L" (place HMC5883L -57.42000 -10.00000 front 180))
+  (component "SIL-100-05_JOYSTICK" (place JOYSTICK -97.24000 57.50000 front 0))
+  (component "SIL-100-06_SBX12_1" (place SBX12_1 -117.99000 6.98000 front 0))
+  (component "SIL-100-05_GPS" (place GPS -33.76000 57.50000 front 0))
+  (component "SIL-100-05_PWRIN" (place PWRIN -117.58000 57.50000 front 0))
+ )
+ (library
+  (image "SIL-100-20_ESP1" (side front)
+   (outline (rect TOP -2.64160 -2.64160 50.90160 3.91160))
+   (pin PS0 (rotate 0) 0 0.00000 0.00000)
+   (pin PS0 (rotate 0) 1 2.54000 0.00000)
+   (pin PS0 (rotate 0) 2 5.08000 0.00000)
+   (pin PS0 (rotate 0) 3 7.62000 0.00000)
+   (pin PS0 (rotate 0) 4 10.16000 0.00000)
+   (pin PS0 (rotate 0) 5 12.70000 0.00000)
+   (pin PS0 (rotate 0) 6 15.24000 0.00000)
+   (pin PS0 (rotate 0) 7 17.78000 0.00000)
+   (pin PS0 (rotate 0) 8 20.32000 0.00000)
+   (pin PS0 (rotate 0) 9 22.86000 0.00000)
+   (pin PS0 (rotate 0) 10 25.40000 0.00000)
+   (pin PS0 (rotate 0) 11 27.94000 0.00000)
+   (pin PS0 (rotate 0) 12 30.48000 0.00000)
+   (pin PS0 (rotate 0) 13 33.02000 0.00000)
+   (pin PS0 (rotate 0) 14 35.56000 0.00000)
+   (pin PS0 (rotate 0) 15 38.10000 0.00000)
+   (pin PS0 (rotate 0) 16 40.64000 0.00000)
+   (pin PS0 (rotate 0) 17 43.18000 0.00000)
+   (pin PS0 (rotate 0) 18 45.72000 0.00000)
+   (pin PS0 (rotate 0) 19 48.26000 0.00000)
+  )
+  (image "SIL-100-20_ESP2" (side front)
+   (outline (rect TOP -2.64160 -2.64160 50.90160 3.91160))
+   (pin PS0 (rotate 0) 0 0.00000 0.00000)
+   (pin PS0 (rotate 0) 1 2.54000 0.00000)
+   (pin PS0 (rotate 0) 2 5.08000 0.00000)
+   (pin PS0 (rotate 0) 3 7.62000 0.00000)
+   (pin PS0 (rotate 0) 4 10.16000 0.00000)
+   (pin PS0 (rotate 0) 5 12.70000 0.00000)
+   (pin PS0 (rotate 0) 6 15.24000 0.00000)
+   (pin PS0 (rotate 0) 7 17.78000 0.00000)
+   (pin PS0 (rotate 0) 8 20.32000 0.00000)
+   (pin PS0 (rotate 0) 9 22.86000 0.00000)
+   (pin PS0 (rotate 0) 10 25.40000 0.00000)
+   (pin PS0 (rotate 0) 11 27.94000 0.00000)
+   (pin PS0 (rotate 0) 12 30.48000 0.00000)
+   (pin PS0 (rotate 0) 13 33.02000 0.00000)
+   (pin PS0 (rotate 0) 14 35.56000 0.00000)
+   (pin PS0 (rotate 0) 15 38.10000 0.00000)
+   (pin PS0 (rotate 0) 16 40.64000 0.00000)
+   (pin PS0 (rotate 0) 17 43.18000 0.00000)
+   (pin PS0 (rotate 0) 18 45.72000 0.00000)
+   (pin PS0 (rotate 0) 19 48.26000 0.00000)
+  )
+  (image "SIL-100-15_ARDUINO NANO1" (side front)
+   (outline (rect TOP -2.64160 -2.64160 38.20160 3.91160))
+   (pin PS0 (rotate 0) 0 0.00000 0.00000)
+   (pin PS0 (rotate 0) 1 2.54000 0.00000)
+   (pin PS0 (rotate 0) 2 5.08000 0.00000)
+   (pin PS0 (rotate 0) 3 7.62000 0.00000)
+   (pin PS0 (rotate 0) 4 10.16000 0.00000)
+   (pin PS0 (rotate 0) 5 12.70000 0.00000)
+   (pin PS0 (rotate 0) 6 15.24000 0.00000)
+   (pin PS0 (rotate 0) 7 17.78000 0.00000)
+   (pin PS0 (rotate 0) 8 20.32000 0.00000)
+   (pin PS0 (rotate 0) 9 22.86000 0.00000)
+   (pin PS0 (rotate 0) 10 25.40000 0.00000)
+   (pin PS0 (rotate 0) 11 27.94000 0.00000)
+   (pin PS0 (rotate 0) 12 30.48000 0.00000)
+   (pin PS0 (rotate 0) 13 33.02000 0.00000)
+   (pin PS0 (rotate 0) 14 35.56000 0.00000)
+  )
+  (image "SIL-100-15_ARDUINO NANO2" (side front)
+   (outline (rect TOP -2.64160 -2.64160 38.20160 3.91160))
+   (pin PS0 (rotate 0) 0 0.00000 0.00000)
+   (pin PS0 (rotate 0) 1 2.54000 0.00000)
+   (pin PS0 (rotate 0) 2 5.08000 0.00000)
+   (pin PS0 (rotate 0) 3 7.62000 0.00000)
+   (pin PS0 (rotate 0) 4 10.16000 0.00000)
+   (pin PS0 (rotate 0) 5 12.70000 0.00000)
+   (pin PS0 (rotate 0) 6 15.24000 0.00000)
+   (pin PS0 (rotate 0) 7 17.78000 0.00000)
+   (pin PS0 (rotate 0) 8 20.32000 0.00000)
+   (pin PS0 (rotate 0) 9 22.86000 0.00000)
+   (pin PS0 (rotate 0) 10 25.40000 0.00000)
+   (pin PS0 (rotate 0) 11 27.94000 0.00000)
+   (pin PS0 (rotate 0) 12 30.48000 0.00000)
+   (pin PS0 (rotate 0) 13 33.02000 0.00000)
+   (pin PS0 (rotate 0) 14 35.56000 0.00000)
+  )
+  (image "SIL-100-06_RELAY4" (side front)
+   (outline (rect TOP -2.64160 -2.64160 15.34160 3.91160))
+   (pin PS0 (rotate 0) 0 0.00000 0.00000)
+   (pin PS0 (rotate 0) 1 2.54000 0.00000)
+   (pin PS0 (rotate 0) 2 5.08000 0.00000)
+   (pin PS0 (rotate 0) 3 7.62000 0.00000)
+   (pin PS0 (rotate 0) 4 10.16000 0.00000)
+   (pin PS0 (rotate 0) 5 12.70000 0.00000)
+  )
+  (image "SIL-100-06_SBX12_2" (side front)
+   (outline (rect TOP -2.64160 -2.64160 15.34160 3.91160))
+   (pin PS0 (rotate 0) 0 0.00000 0.00000)
+   (pin PS0 (rotate 0) 1 2.54000 0.00000)
+   (pin PS0 (rotate 0) 2 5.08000 0.00000)
+   (pin PS0 (rotate 0) 3 7.62000 0.00000)
+   (pin PS0 (rotate 0) 4 10.16000 0.00000)
+   (pin PS0 (rotate 0) 5 12.70000 0.00000)
+  )
+  (image "SIL-100-05_ACCEL" (side front)
+   (outline (rect TOP -2.64160 -2.64160 12.80160 3.91160))
+   (pin PS0 (rotate 0) 0 0.00000 0.00000)
+   (pin PS0 (rotate 0) 1 2.54000 0.00000)
+   (pin PS0 (rotate 0) 2 5.08000 0.00000)
+   (pin PS0 (rotate 0) 3 7.62000 0.00000)
+   (pin PS0 (rotate 0) 4 10.16000 0.00000)
+  )
+  (image "SIL-100-05_HMC5883L" (side front)
+   (outline (rect TOP -2.64160 -2.64160 12.80160 3.91160))
+   (pin PS0 (rotate 0) 0 0.00000 0.00000)
+   (pin PS0 (rotate 0) 1 2.54000 0.00000)
+   (pin PS0 (rotate 0) 2 5.08000 0.00000)
+   (pin PS0 (rotate 0) 3 7.62000 0.00000)
+   (pin PS0 (rotate 0) 4 10.16000 0.00000)
+  )
+  (image "SIL-100-05_JOYSTICK" (side front)
+   (outline (rect TOP -2.64160 -2.64160 12.80160 3.91160))
+   (pin PS0 (rotate 0) 0 0.00000 0.00000)
+   (pin PS0 (rotate 0) 1 2.54000 0.00000)
+   (pin PS0 (rotate 0) 2 5.08000 0.00000)
+   (pin PS0 (rotate 0) 3 7.62000 0.00000)
+   (pin PS0 (rotate 0) 4 10.16000 0.00000)
+  )
+  (image "SIL-100-06_SBX12_1" (side front)
+   (outline (rect TOP -2.64160 -2.64160 15.34160 3.91160))
+   (pin PS0 (rotate 0) 0 0.00000 0.00000)
+   (pin PS0 (rotate 0) 1 2.54000 0.00000)
+   (pin PS0 (rotate 0) 2 5.08000 0.00000)
+   (pin PS0 (rotate 0) 3 7.62000 0.00000)
+   (pin PS0 (rotate 0) 4 10.16000 0.00000)
+   (pin PS0 (rotate 0) 5 12.70000 0.00000)
+  )
+  (image "SIL-100-05_GPS" (side front)
+   (outline (rect TOP -2.64160 -2.64160 12.80160 3.91160))
+   (pin PS0 (rotate 0) 0 0.00000 0.00000)
+   (pin PS0 (rotate 0) 1 2.54000 0.00000)
+   (pin PS0 (rotate 0) 2 5.08000 0.00000)
+   (pin PS0 (rotate 0) 3 7.62000 0.00000)
+   (pin PS0 (rotate 0) 4 10.16000 0.00000)
+  )
+  (image "SIL-100-05_PWRIN" (side front)
+   (outline (rect TOP -2.64160 -2.64160 12.80160 3.91160))
+   (pin PS0 (rotate 0) 0 0.00000 0.00000)
+   (pin PS0 (rotate 0) 1 2.54000 0.00000)
+   (pin PS0 (rotate 0) 2 5.08000 0.00000)
+   (pin PS0 (rotate 0) 3 7.62000 0.00000)
+   (pin PS0 (rotate 0) 4 10.16000 0.00000)
+  )
+  (padstack PS0 (absolute on)
+   (shape (circle TOP 2.03200 0 0))
+   (shape (circle I1 2.03200 0 0))
+   (shape (circle I2 2.03200 0 0))
+   (shape (circle I3 2.03200 0 0))
+   (shape (circle I4 2.03200 0 0))
+   (shape (circle I5 2.03200 0 0))
+   (shape (circle I6 2.03200 0 0))
+   (shape (circle I7 2.03200 0 0))
+   (shape (circle I8 2.03200 0 0))
+   (shape (circle I9 2.03200 0 0))
+   (shape (circle I10 2.03200 0 0))
+   (shape (circle I11 2.03200 0 0))
+   (shape (circle I12 2.03200 0 0))
+   (shape (circle I13 2.03200 0 0))
+   (shape (circle I14 2.03200 0 0))
+   (shape (circle BOT 2.03200 0 0))
+  )
+  (padstack $VIA#0_SIGNAL (absolute on)
+   (shape (circle TOP 0.76200 0 0))
+   (shape (circle I1 0.76200 0 0))
+   (shape (circle I2 0.76200 0 0))
+   (shape (circle I3 0.76200 0 0))
+   (shape (circle I4 0.76200 0 0))
+   (shape (circle I5 0.76200 0 0))
+   (shape (circle I6 0.76200 0 0))
+   (shape (circle I7 0.76200 0 0))
+   (shape (circle I8 0.76200 0 0))
+   (shape (circle I9 0.76200 0 0))
+   (shape (circle I10 0.76200 0 0))
+   (shape (circle I11 0.76200 0 0))
+   (shape (circle I12 0.76200 0 0))
+   (shape (circle I13 0.76200 0 0))
+   (shape (circle I14 0.76200 0 0))
+   (shape (circle BOT 0.76200 0 0))
+  )
+  (padstack $VIA#0_POWER (absolute on)
+   (shape (circle TOP 0.76200 0 0))
+   (shape (circle I1 0.76200 0 0))
+   (shape (circle I2 0.76200 0 0))
+   (shape (circle I3 0.76200 0 0))
+   (shape (circle I4 0.76200 0 0))
+   (shape (circle I5 0.76200 0 0))
+   (shape (circle I6 0.76200 0 0))
+   (shape (circle I7 0.76200 0 0))
+   (shape (circle I8 0.76200 0 0))
+   (shape (circle I9 0.76200 0 0))
+   (shape (circle I10 0.76200 0 0))
+   (shape (circle I11 0.76200 0 0))
+   (shape (circle I12 0.76200 0 0))
+   (shape (circle I13 0.76200 0 0))
+   (shape (circle I14 0.76200 0 0))
+   (shape (circle BOT 0.76200 0 0))
+  )
+ )
+ (network
+  (net "12V"
+   (circuit
+    (use_layer BOT)
+    (use_via
+     $VIA#0_SIGNAL
+    )
+   )
+   (pins SBX12_1-5 PWRIN-1)
+  )
+  (net "27"
+   (circuit
+    (use_layer BOT)
+    (use_via
+     $VIA#0_SIGNAL
+    )
+   )
+   (pins ESP2-9)
+  )
+  (net "5V"
+   (circuit
+    (use_layer BOT)
+    (use_via
+     $VIA#0_SIGNAL
+    )
+   )
+    (pins ESP2-3 "ARDUINO NANO2"-11 RELAY4-5 SBX12_2-0 ACCEL-0 HMC5883L-4 JOYSTICK-4 GPS-3
+   )
+  )
+  (net "ESPRX"
+   (circuit
+    (use_layer BOT)
+    (use_via
+     $VIA#0_SIGNAL
+    )
+   )
+   (pins ESP1-5 "ARDUINO NANO1"-0)
+  )
+  (net "ESPTX"
+   (circuit
+    (use_layer BOT)
+    (use_via
+     $VIA#0_SIGNAL
+    )
+   )
+   (pins ESP1-6 "ARDUINO NANO1"-1)
+  )
+  (net "GND"
+   (circuit
+    (use_layer BOT)
+    (use_via
+     $VIA#0_POWER
+    )
+   )
+    (pins ESP2-2 "ARDUINO NANO2"-13 RELAY4-0 SBX12_2-5 ACCEL-1 HMC5883L-3 JOYSTICK-3 GPS-0
+   )
+  )
+  (net "GNDIN"
+   (circuit
+    (use_layer BOT)
+    (use_via
+     $VIA#0_SIGNAL
+    )
+   )
+   (pins SBX12_1-0 PWRIN-0)
+  )
+  (net "GPSB"
+   (circuit
+    (use_layer BOT)
+    (use_via
+     $VIA#0_SIGNAL
+    )
+   )
+   (pins GPS-4)
+  )
+  (net "GPSRX"
+   (circuit
+    (use_layer BOT)
+    (use_via
+     $VIA#0_SIGNAL
+    )
+   )
+   (pins "ARDUINO NANO1"-10 GPS-1)
+  )
+  (net "GPSTX"
+   (circuit
+    (use_layer BOT)
+    (use_via
+     $VIA#0_SIGNAL
+    )
+   )
+   (pins "ARDUINO NANO1"-9 GPS-2)
+  )
+  (net "JOYBTN"
+   (circuit
+    (use_layer BOT)
+    (use_via
+     $VIA#0_SIGNAL
+    )
+   )
+   (pins ESP2-17 JOYSTICK-0)
+  )
+  (net "JOYX"
+   (circuit
+    (use_layer BOT)
+    (use_via
+     $VIA#0_SIGNAL
+    )
+   )
+   (pins ESP2-19 JOYSTICK-2)
+  )
+  (net "JOYY"
+   (circuit
+    (use_layer BOT)
+    (use_via
+     $VIA#0_SIGNAL
+    )
+   )
+   (pins ESP2-18 JOYSTICK-1)
+  )
+  (net "NANOA4"
+   (circuit
+    (use_layer BOT)
+    (use_via
+     $VIA#0_SIGNAL
+    )
+   )
+   (pins "ARDUINO NANO2"-7 HMC5883L-1)
+  )
+  (net "NANOA5"
+   (circuit
+    (use_layer BOT)
+    (use_via
+     $VIA#0_SIGNAL
+    )
+   )
+   (pins "ARDUINO NANO2"-8 HMC5883L-2)
+  )
+  (net "PWM1"
+   (circuit
+    (use_layer BOT)
+    (use_via
+     $VIA#0_SIGNAL
+    )
+   )
+   (pins ESP1-7 ACCEL-2)
+  )
+  (net "RELAY1"
+   (circuit
+    (use_layer BOT)
+    (use_via
+     $VIA#0_SIGNAL
+    )
+   )
+   (pins "ARDUINO NANO1"-4 RELAY4-1)
+  )
+  (net "RELAY2"
+   (circuit
+    (use_layer BOT)
+    (use_via
+     $VIA#0_SIGNAL
+    )
+   )
+   (pins "ARDUINO NANO1"-5 RELAY4-2)
+  )
+  (net "RELAY3"
+   (circuit
+    (use_layer BOT)
+    (use_via
+     $VIA#0_SIGNAL
+    )
+   )
+   (pins "ARDUINO NANO1"-6 RELAY4-3)
+  )
+  (net "RELAY4"
+   (circuit
+    (use_layer BOT)
+    (use_via
+     $VIA#0_SIGNAL
+    )
+   )
+   (pins "ARDUINO NANO1"-7 RELAY4-4)
+  )
+  (class POWER
+   "GND"
+   (rule
+    (width 0.25400)
+    (clearance 0.38100)
+    (clearance 0.25400 (type wire_via))
+    (clearance 0.25400 (type wire_smd))
+    (clearance 0.25400 (type wire_pin))
+    (clearance 0.25400 (type wire_wire))
+    (clearance 0.25400 (type via_pin))
+    (clearance 0.25400 (type via_via))
+    (clearance 0.25400 (type via_smd))
+   )
+   (rule
+    (width 0.25400)
+    (clearance 0.38100)
+    (clearance 0.25400 (type wire_via))
+    (clearance 0.25400 (type wire_smd))
+    (clearance 0.25400 (type wire_pin))
+    (clearance 0.25400 (type wire_wire))
+    (clearance 0.25400 (type via_pin))
+    (clearance 0.25400 (type via_via))
+    (clearance 0.25400 (type via_smd))
+   )
+  )
+  (class SIGNAL
+   "12V"
+   "27"
+   "5V"
+   "ESPRX"
+   "ESPTX"
+   "GNDIN"
+   "GPSB"
+   "GPSRX"
+   "GPSTX"
+   "JOYBTN"
+   "JOYX"
+   "JOYY"
+   "NANOA4"
+   "NANOA5"
+   "PWM1"
+   "RELAY1"
+   "RELAY2"
+   "RELAY3"
+   "RELAY4"
+   "{NC}"
+   "{VOID}"
+   (rule
+    (width 0.25400)
+    (clearance 0.38100)
+    (clearance 0.25400 (type wire_via))
+    (clearance 0.25400 (type wire_smd))
+    (clearance 0.25400 (type wire_pin))
+    (clearance 0.25400 (type wire_wire))
+    (clearance 0.25400 (type via_pin))
+    (clearance 0.25400 (type via_via))
+    (clearance 0.25400 (type via_smd))
+   )
+   (rule
+    (width 0.25400)
+    (clearance 0.38100)
+    (clearance 0.25400 (type wire_via))
+    (clearance 0.25400 (type wire_smd))
+    (clearance 0.25400 (type wire_pin))
+    (clearance 0.25400 (type wire_wire))
+    (clearance 0.25400 (type via_pin))
+    (clearance 0.25400 (type via_via))
+    (clearance 0.25400 (type via_smd))
+   )
+  )
+ )
+ (wiring
+   (wire (path BOT 0.25400 -105.29000 6.98000 -105.29000 11.54271 -120.65000 11.54271
+   -120.65000 55.24500 -115.04000 55.24500 -115.04000 57.50000) (net "12V"))
+   (wire (path BOT 0.25400 -76.94000 57.50000 -76.94000 60.32500 -43.94000 60.32500 -43.94000 57.50000
+  ) (net "5V"))
+   (wire (path BOT 0.25400 -43.94000 57.50000 -40.64000 57.50000 -40.64000 55.88000 -26.14000 55.88000
+   -26.14000 57.50000) (net "5V"))
+   (wire (path BOT 0.25400 -123.19000 4.44500 -123.19000 60.32500 -87.08000 60.32500
+   -87.08000 57.50000) (net "5V"))
+   (wire (path BOT 0.25400 -67.58000 -10.00000 -67.58000 17.50000 -40.00000 17.50000
+  ) (net "5V"))
+   (wire (path BOT 0.25400 -77.34000 20.96000 -77.34000 4.44500 -123.19000 4.44500) (net "5V")
+  )
+   (wire (path BOT 0.25400 -123.19000 4.44500 -123.19000 -13.33500 -105.29000 -13.33500
+   -105.29000 -10.84200) (net "5V"))
+   (wire (path BOT 0.25400 -105.29000 -10.84200 -69.85000 -10.84200 -69.85000 -10.00000
+   -67.58000 -10.00000) (net "5V"))
+  (wire (path BOT 0.25400 -87.08000 57.50000 -76.94000 57.50000) (net "5V"))
+   (wire (path BOT 0.25400 -105.08000 43.66000 -105.08000 28.18300 -27.94000 28.18300
+   -27.94000 25.30100 -24.80700 25.30100) (net "ESPRX"))
+   (wire (path BOT 0.25400 -102.54000 43.66000 -102.54000 37.04961 -22.86000 37.04961
+   -22.86000 22.76100 -24.80700 22.76100) (net "ESPTX"))
+  (wire (path BOT 0.25400 -33.76000 59.05500 -33.76000 57.50000) (net "GND"))
+   (wire (path BOT 0.25400 -56.64000 59.05500 -74.40000 59.05500 -74.40000 57.50000)
+   (net "GND"))
+  (wire (path BOT 0.25400 -56.64000 57.50000 -56.64000 59.05500) (net "GND"))
+   (wire (path BOT 0.25400 -74.80000 20.96000 -74.80000 -0.90256 -117.99000 -0.90256
+   -117.99000 -10.84200) (net "GND"))
+   (wire (path BOT 0.25400 -40.00000 22.58000 -35.69461 22.58000 -35.69461 -12.70000
+   -16.51000 -12.70000 -16.51000 17.97000 -15.28920 17.97000) (net "GND"))
+   (wire (path BOT 0.25400 -74.80000 20.96000 -74.80000 22.58000 -40.00000 22.58000)
+   (net "GND"))
+   (wire (path BOT 0.25400 -33.65500 60.96000 -33.65500 60.32500 -33.76000 60.32500 -33.76000 59.05500
+  ) (net "GND"))
+   (wire (path BOT 0.25400 -15.28920 17.97000 -15.28920 60.96000 -33.65500 60.96000)
+   (net "GND"))
+   (wire (path BOT 0.25400 -74.40000 57.50000 -74.40000 55.24500 -89.62000 55.24500 -89.62000 57.50000
+  ) (net "GND"))
+   (wire (path BOT 0.25400 -65.04000 -10.00000 -65.20000 -10.00000) (net "GND") (type protect)
+  )
+   (wire (path BOT 0.25400 -15.28920 17.97000 -15.18920 17.97000) (net "GND") (type protect)
+  )
+   (wire (path BOT 0.25400 -15.18920 17.81000 -15.18920 17.51900) (net "GND") (type protect)
+  )
+   (wire (path BOT 0.25400 -15.18920 17.97000 -15.18920 17.81000) (net "GND") (type protect)
+  )
+   (wire (path BOT 0.25400 -117.99000 6.98000 -117.99000 10.16000 -121.28500 10.16000
+   -121.28500 57.50000 -117.58000 57.50000) (net "GNDIN"))
+   (wire (path BOT 0.25400 -24.80700 -0.09900 -19.05000 -0.09900 -19.05000 59.69000 -31.22000 59.69000
+   -31.22000 57.50000) (net "GPSRX"))
+   (wire (path BOT 0.25400 -24.80700 2.44100 -20.32000 2.44100 -20.32000 59.05500 -28.68000 59.05500
+   -28.68000 57.50000) (net "GPSTX"))
+   (wire (path BOT 0.25400 -117.98000 20.96000 -117.98000 24.13000 -119.38000 24.13000
+   -119.38000 53.97500 -92.16000 53.97500 -92.16000 57.50000) (net "JOYX"))
+   (wire (path BOT 0.25400 -115.44000 20.96000 -115.44000 16.29173 -102.87000 16.29173
+    -102.87000 5.08000 -121.92000 5.08000 -121.92000 59.05500 -94.70000 59.05500 -94.70000 57.50000
+  ) (net "JOYY"))
+   (wire (path BOT 0.25400 -40.00000 7.34000 -59.96000 7.34000 -59.96000 -10.00000) (net "NANOA4")
+  )
+   (wire (path BOT 0.25400 -40.00000 9.88000 -62.50000 9.88000 -62.50000 -10.00000) (net "NANOA5")
+  )
+   (wire (path BOT 0.25400 -100.00000 43.66000 -100.00000 48.26000 -71.86000 48.26000
+   -71.86000 57.50000) (net "PWM1"))
+   (wire (path BOT 0.25400 -24.80700 12.60100 -22.22500 12.60100 -22.22500 50.16500 -51.56000 50.16500
+   -51.56000 57.50000) (net "RELAY2"))
+   (wire (path BOT 0.25400 -24.80700 10.06100 -21.59000 10.06100 -21.59000 51.43500 -49.02000 51.43500
+   -49.02000 57.50000) (net "RELAY3"))
+   (wire (path BOT 0.25400 -24.80700 7.52100 -20.95500 7.52100 -20.95500 53.80154 -46.48000 53.80154
+   -46.48000 57.50000) (net "RELAY4"))
+ )
+)
+>>>>>>> a74150303ebe0733389dbdda73fa53fe1df89a02
