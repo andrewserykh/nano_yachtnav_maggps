@@ -1,4 +1,3 @@
-<<<<<<< HEAD
  (routes 
   (resolution mm 100000)
   (parser
@@ -81,11 +80,11 @@
    (Net 12V 
    (rule
    )
-   (wire (path TOP 50800  7674000 -2052480 5080000 -2052480 5080000 -1432000
-     4665000 -1432000)
-    (connect (terminal pin PLUGPWR-2) (terminal pin SBX1-5))
+   (wire (path BOT 127000  4665000 -1432000 4665000 -2052480 7600000 -2052480)
+    (connect (terminal pin SBX1-5) (terminal pin PLUGPWR-2))
    )
-   (wire (path BOT 50800  7674000 -2052480 6603000 -2052480 6603000 -3210000)
+   (wire (path BOT 127000  7600000 -2052480 7874000 -2052480 7874000 -3210000
+     6603000 -3210000)
     (connect (terminal pin PLUGPWR-2) (terminal pin SBX4-0))
    )
    )
@@ -100,115 +99,126 @@
    (Net 5V 
    (rule
    )
-   (wire (path BOT 50800  1177200 -1500000 1177200 -721385 317500 -721385
-     317500 4941000 -665500 4941000)
-    (connect (terminal pin PLUG_GPS-3) (terminal pin ARDUINO1-11))
+   (wire (path BOT 127000  2476500 -1905000 2476500 -1460500 2413000 -1460500
+     2413000 3492500 7120000 3492500 7120000 3298000)
+    (connect (terminal wire) (terminal pin ESP2-3))
    )
-   (wire (path BOT 50800  7120000 3298000 7120000 3619500 8445500 3619500
-     8445500 -2448720 7674000 -2448720)
-    (connect (terminal pin ESP2-3) (terminal pin PLUGPWR-3))
+   (wire (path BOT 127000  -665500 4941000 -444500 4941000 -444500 -744830
+     1477200 -744830 1477200 -1700000)
+    (connect (terminal pin ARDUINO1-11) (terminal pin PLUG_GPS-3))
    )
-   (wire (path TOP 50800  -779000 -3312000 -779000 -2849787 1270000 -2849787
-     1270000 -2413000)
-    (connect (terminal pin HMC-4) (terminal wire))
-   )
-   (wire (path TOP 50800  4826000 -2448720 4826000 -2286000 1270000 -2286000
-     1270000 -2413000)
+   (wire (path BOT 127000  2476500 -1905000 4000500 -1905000 4000500 -2603500
+     4635500 -2603500)
     (connect (terminal wire) (terminal wire))
    )
-   (wire (path TOP 50800  4826000 -2448720 4826000 -2794000 4665000 -2794000
-     4665000 -3207000)
-    (connect (terminal wire) (terminal pin SBX2-0))
+   (wire (path BOT 127000  -665500 4941000 -1270000 4941000 -1270000 -2730500
+     -779000 -2730500 -779000 -3312000)
+    (connect (terminal pin ARDUINO1-11) (terminal pin HMC-4))
    )
-   (wire (path TOP 50800  1177200 -1500000 1177200 -2413000 1270000 -2413000)
+   (wire (path BOT 127000  7600000 -2448720 4635500 -2448720 4635500 -2603500)
+    (connect (terminal pin PLUGPWR-3) (terminal wire))
+   )
+   (wire (path BOT 127000  1477200 -1700000 1477200 -1905000 2476500 -1905000)
     (connect (terminal pin PLUG_GPS-3) (terminal wire))
    )
-   (wire (path TOP 50800  7674000 -2448720 4826000 -2448720)
-    (connect (terminal pin PLUGPWR-3) (terminal wire))
+   (wire (path BOT 127000  4665000 -3207000 4665000 -2603500 4635500 -2603500)
+    (connect (terminal pin SBX2-0) (terminal wire))
    )
    )
    (Net DI1 
    (rule
    )
-   (wire (path BOT 50800  6056000 1054000 6056000 1587500 6358000 1587500
-     6358000 3298000)
-    (connect (terminal pin PLUG_DI-0) (terminal pin ESP2-6))
+   (wire (path BOT 127000  6358000 3298000 6358000 1016000 6206000 1016000
+     6206000 304000)
+    (connect (terminal pin ESP2-6) (terminal pin PLUG_DI-0))
    )
    )
    (Net DI2 
    (rule
    )
-   (wire (path BOT 50800  5659760 1054000 5659760 2080781 6104000 2080781
-     6104000 3298000)
-    (connect (terminal pin PLUG_DI-1) (terminal pin ESP2-7))
+   (wire (path BOT 127000  6104000 3298000 6104000 1555148 5809760 1555148
+     5809760 304000)
+    (connect (terminal pin ESP2-7) (terminal pin PLUG_DI-1))
    )
    )
    (Net DI3 
    (rule
    )
-   (wire (path BOT 50800  5263520 1054000 5263520 2159000 5850000 2159000
-     5850000 3298000)
-    (connect (terminal pin PLUG_DI-2) (terminal pin ESP2-8))
+   (wire (path BOT 127000  5850000 3298000 5850000 2152192 5413520 2152192
+     5413520 304000)
+    (connect (terminal pin ESP2-8) (terminal pin PLUG_DI-2))
    )
    )
    (Net DI4 
    (rule
    )
-   (wire (path BOT 50800  4867280 1054000 4867280 2286000 4834000 2286000
-     4834000 3298000)
-    (connect (terminal pin PLUG_DI-3) (terminal pin ESP2-12))
+   (wire (path BOT 127000  4834000 3298000 4834000 1757080 5017280 1757080
+     5017280 304000)
+    (connect (terminal pin ESP2-12) (terminal pin PLUG_DI-3))
    )
    )
    (Net ESPRX 
    (rule
    )
-   (wire (path TOP 50800  851500 5712000 1597992 5712000 1597992 5778500
-     4318000 5778500 4318000 5586000)
-    (connect (terminal pin ARDUINO2-0) (terminal pin ESP1-5))
+   (wire (path BOT 127000  4318000 5586000 4318000 5778500 1520516 5778500
+     1520516 5712000 851500 5712000)
+    (connect (terminal pin ESP1-5) (terminal pin ARDUINO2-0))
    )
    )
    (Net ESPTX 
    (rule
    )
-   (wire (path TOP 50800  851500 5458000 1524000 5458000 1524000 5334000
-     4572000 5334000 4572000 5586000)
-    (connect (terminal pin ARDUINO2-1) (terminal pin ESP1-6))
+   (wire (path BOT 127000  4572000 5586000 4572000 5334000 2667000 5334000
+     2667000 5458000 851500 5458000)
+    (connect (terminal pin ESP1-6) (terminal pin ARDUINO2-1))
    )
    )
    (Net GND 
    (rule
    )
-   (wire (path BOT 50800  7374000 3298000 7374000 1920473 8191500 1920473
-     8191500 -382767 7674000 -382767 7674000 -1260000)
-    (connect (terminal pin ESP2-2) (terminal pin PLUGPWR-0))
+   (wire (path BOT 152400  7302500 0 8382000 0 8382000 5969000
+     444500 5969000 444500 5449000 -665500 5449000)
+    (connect (terminal wire) (terminal pin ARDUINO1-13))
    )
-   (wire (path BOT 50800  -665500 5449000 -1079500 5449000 -1079500 709468
-     -525000 709468 -525000 -3312000)
-    (connect (terminal pin ARDUINO1-13) (terminal pin HMC-3))
+   (wire (path BOT 152400  7374000 3298000 7374000 3873500 2239200 3873500
+     2239200 -1700000)
+    (connect (terminal pin ESP2-2) (terminal pin PLUG_GPS-0))
    )
-   (wire (path BOT 50800  -525000 -3312000 -525000 -3492500 3365500 -3492500)
-    (connect (terminal pin HMC-3) (terminal wire))
+   (wire (path BOT 152400  7600000 -1260000 8064500 -1260000 8064500 -3492500
+     5333000 -3492500)
+    (connect (terminal pin PLUGPWR-0) (terminal wire))
    )
-   (wire (path BOT 50800  5333000 -3210000 5333000 -3492500 3365500 -3492500)
-    (connect (terminal pin SBX4-5) (terminal wire))
+   (wire (path BOT 152400  3395000 -3492500 2667000 -3492500 2667000 -3556000
+     -525000 -3556000 -525000 -3312000)
+    (connect (terminal wire) (terminal pin HMC-3))
    )
-   (wire (path BOT 50800  7674000 -1260000 5339000 -1260000 5339000 -1425000)
-    (connect (terminal pin PLUGPWR-0) (terminal pin SBX3-0))
+   (wire (path BOT 152400  3395000 -1432000 3395000 -1206500 5334000 -1206500)
+    (connect (terminal pin SBX1-0) (terminal wire))
    )
-   (wire (path BOT 50800  3395000 -1432000 2233420 -1432000 2233420 -1500000
-     1939200 -1500000)
-    (connect (terminal pin SBX1-0) (terminal pin PLUG_GPS-0))
+   (wire (path BOT 152400  7374000 3298000 7374000 2403934 6604000 2403934
+     6604000 0 7302500 0)
+    (connect (terminal pin ESP2-2) (terminal wire))
    )
-   (wire (path BOT 50800  5339000 -1425000 5339000 -1841500 5333000 -1841500
-     5333000 -3210000)
-    (connect (terminal pin SBX3-0) (terminal pin SBX4-5))
+   (wire (path BOT 152400  7600000 -1260000 7600000 -1206500 7302500 -1206500)
+    (connect (terminal pin PLUGPWR-0) (terminal wire))
    )
-   (wire (path BOT 50800  3395000 -3207000 3395000 -3365500 3365500 -3365500
-     3365500 -3492500)
-    (connect (terminal pin SBX2-5) (terminal wire))
+   (wire (path BOT 152400  5339000 -1425000 5334000 -1425000 5334000 -1206500)
+    (connect (terminal pin SBX3-0) (terminal wire))
    )
-   (wire (path BOT 50800  3395000 -3207000 3395000 -1432000)
-    (connect (terminal pin SBX2-5) (terminal pin SBX1-0))
+   (wire (path BOT 152400  7302500 -1206500 5334000 -1206500)
+    (connect (terminal wire) (terminal wire))
+   )
+   (wire (path BOT 152400  3395000 -3492500 5333000 -3492500)
+    (connect (terminal wire) (terminal wire))
+   )
+   (wire (path BOT 152400  7302500 0 7302500 -1206500)
+    (connect (terminal wire) (terminal wire))
+   )
+   (wire (path BOT 152400  3395000 -3492500 3395000 -3207000)
+    (connect (terminal wire) (terminal pin SBX2-5))
+   )
+   (wire (path BOT 152400  5333000 -3492500 5333000 -3210000)
+    (connect (terminal wire) (terminal pin SBX4-5))
    )
    )
    (Net GPSB 
@@ -218,96 +228,94 @@
    (Net GPSRX 
    (rule
    )
-   (wire (path BOT 50800  1685200 -1500000 1685200 698500 698500 698500
-     698500 3172000 851500 3172000)
+   (wire (path BOT 127000  1985200 -1700000 1985200 3172000 851500 3172000)
     (connect (terminal pin PLUG_GPS-1) (terminal pin ARDUINO2-10))
    )
    )
    (Net GPSTX 
    (rule
    )
-   (wire (path BOT 50800  1431200 -1500000 1431200 70103 571500 70103
-     571500 3426000 851500 3426000)
+   (wire (path BOT 127000  1731200 -1700000 1731200 -1460500 1827550 -1460500
+     1827550 1569460 635000 1569460 635000 3426000 851500 3426000)
     (connect (terminal pin PLUG_GPS-2) (terminal pin ARDUINO2-9))
    )
    )
    (Net JOYBTN 
    (rule
    )
-   (wire (path BOT 50800  3564000 3298000 3564000 3746500 2730500 3746500
-     2730500 2125683 3377520 2125683 3377520 1060000)
+   (wire (path BOT 127000  3564000 3298000 3564000 2667000 3527520 2667000
+     3527520 310000)
     (connect (terminal pin ESP2-17) (terminal pin PLUG_JOY-2))
    )
    )
    (Net JOYX 
    (rule
    )
-   (wire (path BOT 50800  3056000 3298000 3056000 2984500 4170000 2984500
-     4170000 1060000)
-    (connect (terminal pin ESP2-19) (terminal pin PLUG_JOY-0))
+   (wire (path BOT 127000  4320000 310000 4320000 -317500 2603500 -317500
+     2603500 2667000 3056000 2667000 3056000 3298000)
+    (connect (terminal pin PLUG_JOY-0) (terminal pin ESP2-19))
    )
    )
    (Net JOYY 
    (rule
    )
-   (wire (path BOT 50800  3310000 3298000 3310000 3492500 2857500 3492500
-     2857500 2603500 3773760 2603500 3773760 1060000)
-    (connect (terminal pin ESP2-18) (terminal pin PLUG_JOY-1))
+   (wire (path BOT 127000  3923760 310000 3923760 63500 2794000 63500
+     2794000 2074731 3310000 2074731 3310000 3298000)
+    (connect (terminal pin PLUG_JOY-1) (terminal pin ESP2-18))
    )
    )
    (Net NANOA4 
    (rule
    )
-   (wire (path BOT 50800  -665500 3925000 -17000 3925000 -17000 -3312000)
-    (connect (terminal pin ARDUINO1-7) (terminal pin HMC-1))
+   (wire (path BOT 127000  -17000 -3312000 -17000 -1841500 -889000 -1841500
+     -889000 3925000 -665500 3925000)
+    (connect (terminal pin HMC-1) (terminal pin ARDUINO1-7))
    )
    )
    (Net NANOA5 
    (rule
    )
-   (wire (path BOT 50800  -665500 4179000 -825500 4179000 -825500 1609301
-     -271000 1609301 -271000 -3312000)
-    (connect (terminal pin ARDUINO1-8) (terminal pin HMC-2))
+   (wire (path BOT 127000  -271000 -3312000 -271000 -2476500 -1079500 -2476500
+     -1079500 4179000 -665500 4179000)
+    (connect (terminal pin HMC-2) (terminal pin ARDUINO1-8))
    )
    )
    (Net PWM1 
    (rule
    )
-   (wire (path TOP 50800  7048500 5016500 8318500 5016500 8318500 1524000
-     7929000 1524000 7929000 1043000)
-    (connect (terminal via) (terminal pin PLUG_PWM-0))
+   (wire (path BOT 127000  8079000 293000 8079000 5050657 4826000 5050657
+     4826000 5586000)
+    (connect (terminal pin PLUG_PWM-0) (terminal pin ESP1-7))
    )
-   (wire (path BOT 50800  4826000 5586000 4826000 5207000 7048500 5207000
-     7048500 5016500)
-    (connect (terminal pin ESP1-7) (terminal via))
-   )
-   (via $VIA#0_SIGNAL 7048500 5016500)
    )
    (Net RELAY1 
    (rule
    )
-   (wire (path BOT 50800  2281000 1062000 2281000 4696000 851500 4696000)
-    (connect (terminal pin PLUG_RLY-0) (terminal pin ARDUINO2-4))
+   (wire (path BOT 127000  851500 4696000 -254000 4696000 -254000 -317500
+     1581000 -317500 1581000 312000)
+    (connect (terminal pin ARDUINO2-4) (terminal pin PLUG_RLY-0))
    )
    )
    (Net RELAY2 
    (rule
    )
-   (wire (path BOT 50800  1884760 1062000 1884760 4442000 851500 4442000)
+   (wire (path BOT 127000  1184760 312000 1184760 -127000 -63500 -127000
+     -63500 4442000 851500 4442000)
     (connect (terminal pin PLUG_RLY-1) (terminal pin ARDUINO2-5))
    )
    )
    (Net RELAY3 
    (rule
    )
-   (wire (path BOT 50800  1488520 1062000 1488520 4188000 851500 4188000)
-    (connect (terminal pin PLUG_RLY-2) (terminal pin ARDUINO2-6))
+   (wire (path BOT 127000  851500 4188000 127000 4188000 127000 63500
+     788520 63500 788520 312000)
+    (connect (terminal pin ARDUINO2-6) (terminal pin PLUG_RLY-2))
    )
    )
    (Net RELAY4 
    (rule
    )
-   (wire (path BOT 50800  1092280 1062000 1092280 3934000 851500 3934000)
+   (wire (path BOT 127000  392280 312000 392280 3934000 851500 3934000)
     (connect (terminal pin PLUG_RLY-3) (terminal pin ARDUINO2-7))
    )
    )
@@ -318,323 +326,9 @@
    (Net SOLAR40V 
    (rule
    )
-   (wire (path TOP 50800  7674000 -1656240 7048500 -1656240 7048500 -1425000
-     6609000 -1425000)
+   (wire (path BOT 127000  7600000 -1656240 6609000 -1656240 6609000 -1425000)
     (connect (terminal pin PLUGPWR-1) (terminal pin SBX3-5))
    )
    )
   )
  )
-=======
- (routes 
-  (resolution mm 100000)
-  (parser
-  )
-  (parser
-  )
-  (structure_out
-   (layer TOP (type signal)
-   )
-   (layer I1 (type signal)
-   )
-   (layer I2 (type signal)
-   )
-   (layer I3 (type signal)
-   )
-   (layer I4 (type signal)
-   )
-   (layer I5 (type signal)
-   )
-   (layer I6 (type signal)
-   )
-   (layer I7 (type signal)
-   )
-   (layer I8 (type signal)
-   )
-   (layer I9 (type signal)
-   )
-   (layer I10 (type signal)
-   )
-   (layer I11 (type signal)
-   )
-   (layer I12 (type signal)
-   )
-   (layer I13 (type signal)
-   )
-   (layer I14 (type signal)
-   )
-   (layer BOT (type signal)
-   )
-  )
-  (library_out
-  (padstack $VIA#0_SIGNAL
-   (shape (circ TOP 76200 0 0))
-   (shape (circ I1 76200 0 0))
-   (shape (circ I2 76200 0 0))
-   (shape (circ I3 76200 0 0))
-   (shape (circ I4 76200 0 0))
-   (shape (circ I5 76200 0 0))
-   (shape (circ I6 76200 0 0))
-   (shape (circ I7 76200 0 0))
-   (shape (circ I8 76200 0 0))
-   (shape (circ I9 76200 0 0))
-   (shape (circ I10 76200 0 0))
-   (shape (circ I11 76200 0 0))
-   (shape (circ I12 76200 0 0))
-   (shape (circ I13 76200 0 0))
-   (shape (circ I14 76200 0 0))
-   (shape (circ BOT 76200 0 0))
-  )
-  (padstack $VIA#0_POWER
-   (shape (circ TOP 76200 0 0))
-   (shape (circ I1 76200 0 0))
-   (shape (circ I2 76200 0 0))
-   (shape (circ I3 76200 0 0))
-   (shape (circ I4 76200 0 0))
-   (shape (circ I5 76200 0 0))
-   (shape (circ I6 76200 0 0))
-   (shape (circ I7 76200 0 0))
-   (shape (circ I8 76200 0 0))
-   (shape (circ I9 76200 0 0))
-   (shape (circ I10 76200 0 0))
-   (shape (circ I11 76200 0 0))
-   (shape (circ I12 76200 0 0))
-   (shape (circ I13 76200 0 0))
-   (shape (circ I14 76200 0 0))
-   (shape (circ BOT 76200 0 0))
-  )
-  )
-  (network_out
-   (Net 12V 
-   (rule
-   )
-   (wire (path BOT 25400  -10529000 698000 -10529000 1651000 -12065000 1651000
-     -12065000 5524500 -11504000 5524500 -11504000 5750000)
-    (connect (terminal pin SBX12_1-5) (terminal pin PWRIN-1))
-   )
-   )
-   (Net 27 
-   (rule
-   )
-   )
-   (Net 5V 
-   (rule
-   )
-   (wire (path BOT 25400  -4394000 5750000 -4394000 5969000 -7694000 5969000
-     -7694000 5750000)
-    (connect (terminal pin RELAY4-5) (terminal pin ACCEL-0))
-   )
-   (wire (path BOT 25400  -4394000 5750000 -4064000 5750000 -4064000 5588000
-     -2614000 5588000 -2614000 5750000)
-    (connect (terminal pin RELAY4-5) (terminal pin GPS-3))
-   )
-   (wire (path BOT 25400  -10529000 -1084200 -10529000 -1333500 -12382500 -1333500
-     -12382500 6096000 -8708000 6096000 -8708000 5750000)
-    (connect (terminal pin SBX12_2-0) (terminal pin JOYSTICK-4))
-   )
-   (wire (path BOT 25400  -7734000 2096000 -7734000 2349500 -6667500 2349500
-     -6667500 1750000)
-    (connect (terminal pin ESP2-3) (terminal wire))
-   )
-   (wire (path BOT 25400  -10529000 -1084200 -10129021 -1084200 -10129021 -1000000
-     -6758000 -1000000)
-    (connect (terminal pin SBX12_2-0) (terminal pin HMC5883L-4))
-   )
-   (wire (path BOT 25400  -6667500 1750000 -6667500 1478992 -6758000 1478992
-     -6758000 -1000000)
-    (connect (terminal wire) (terminal pin HMC5883L-4))
-   )
-   (wire (path BOT 25400  -4000000 1750000 -6667500 1750000)
-    (connect (terminal pin "ARDUINO NANO2"-11) (terminal wire))
-   )
-   (wire (path BOT 25400  -7694000 5750000 -8708000 5750000)
-    (connect (terminal pin ACCEL-0) (terminal pin JOYSTICK-4))
-   )
-   )
-   (Net ESPRX 
-   (rule
-   )
-   (wire (path BOT 25400  -2480700 2530100 -2794000 2530100 -2794000 3067138
-     -10508000 3067138 -10508000 4366000)
-    (connect (terminal pin "ARDUINO NANO1"-0) (terminal pin ESP1-5))
-   )
-   )
-   (Net ESPTX 
-   (rule
-   )
-   (wire (path BOT 25400  -2480700 2276100 -2338900 2276100 -2338900 3010705
-     -2413000 3010705 -2413000 3499946 -10254000 3499946 -10254000 4366000)
-    (connect (terminal pin "ARDUINO NANO1"-1) (terminal pin ESP1-6))
-   )
-   )
-   (Net GND 
-   (rule
-   )
-   (wire (path BOT 25400  -3376000 5905500 -5664000 5905500 -5664000 5750000)
-    (connect (terminal wire) (terminal pin RELAY4-0))
-   )
-   (wire (path BOT 25400  -3376000 5905500 -3376000 6096000 -1651000 6096000
-     -1651000 1797000)
-    (connect (terminal wire) (terminal wire))
-   )
-   (wire (path BOT 25400  -8962000 5750000 -8962000 5969000 -12255500 5969000
-     -12255500 254000 -11811000 254000)
-    (connect (terminal pin JOYSTICK-3) (terminal wire))
-   )
-   (wire (path BOT 25400  -7480000 2096000 -7480000 254000 -11811000 254000)
-    (connect (terminal pin ESP2-2) (terminal wire))
-   )
-   (wire (path BOT 25400  -3376000 5750000 -3376000 5905500)
-    (connect (terminal pin GPS-0) (terminal wire))
-   )
-   (wire (path BOT 25400  -4000000 2258000 -3378575 2258000 -3378575 -1270000
-     -1651000 -1270000 -1651000 1797000)
-    (connect (terminal pin "ARDUINO NANO2"-13) (terminal wire))
-   )
-   (wire (path BOT 25400  -11799000 -1084200 -11799000 -762000 -11811000 -762000
-     -11811000 254000)
-    (connect (terminal pin SBX12_2-5) (terminal wire))
-   )
-   (wire (path BOT 25400  -5664000 5750000 -6069209 5750000 -6069209 5905500
-     -7440000 5905500 -7440000 5750000)
-    (connect (terminal pin RELAY4-0) (terminal pin ACCEL-1))
-   )
-   (wire (path BOT 25400  -8962000 5750000 -8962000 5524500 -7440000 5524500
-     -7440000 5750000)
-    (connect (terminal pin JOYSTICK-3) (terminal pin ACCEL-1))
-   )
-   (wire (path BOT 25400  -1528920 1797000 -1651000 1797000)
-    (connect (terminal wire) (terminal wire))
-    (attr fanout)
-   )
-   (wire (path BOT 25400  -1518920 1797000 -1518920 1781000)
-    (connect (terminal wire) (terminal wire))
-    (type protect)
-    (attr fanout)
-   )
-   (wire (path BOT 25400  -1518920 1781000 -1518920 1751900)
-    (connect (terminal wire) (terminal wire))
-    (type protect)
-    (attr fanout)
-   )
-   (wire (path BOT 25400  -1528920 1797000 -1518920 1797000)
-    (connect (terminal wire) (terminal wire))
-    (type protect)
-    (attr fanout)
-   )
-   (wire (path BOT 25400  -6504000 -1000000 -6520000 -1000000)
-    (connect (terminal pin HMC5883L-3) (terminal wire))
-    (type protect)
-    (attr fanout)
-   )
-   )
-   (Net GNDIN 
-   (rule
-   )
-   (wire (path BOT 25400  -11799000 698000 -11799000 1016000 -12128500 1016000
-     -12128500 5750000 -11758000 5750000)
-    (connect (terminal pin SBX12_1-0) (terminal pin PWRIN-0))
-   )
-   )
-   (Net GPSB 
-   (rule
-   )
-   )
-   (Net GPSRX 
-   (rule
-   )
-   (wire (path BOT 25400  -3122000 5750000 -3122000 5969000 -1905000 5969000
-     -1905000 -9900 -2480700 -9900)
-    (connect (terminal pin GPS-1) (terminal pin "ARDUINO NANO1"-10))
-   )
-   )
-   (Net GPSTX 
-   (rule
-   )
-   (wire (path BOT 25400  -2480700 244100 -2032000 244100 -2032000 5905500
-     -2868000 5905500 -2868000 5750000)
-    (connect (terminal pin "ARDUINO NANO1"-9) (terminal pin GPS-2))
-   )
-   )
-   (Net JOYBTN 
-   (rule
-   )
-   (wire (path BOT 25400  -9724000 5750000 -10033000 5750000 -10033000 5397500
-     -12001500 5397500 -12001500 2480421 -11290000 2480421 -11290000 2096000)
-    (connect (terminal pin JOYSTICK-0) (terminal pin ESP2-17))
-   )
-   )
-   (Net JOYX 
-   (rule
-   )
-   (wire (path BOT 25400  -9216000 5750000 -9216000 5137268 -11938000 5137268
-     -11938000 2413000 -11798000 2413000 -11798000 2096000)
-    (connect (terminal pin JOYSTICK-2) (terminal pin ESP2-19))
-   )
-   )
-   (Net JOYY 
-   (rule
-   )
-   (wire (path BOT 25400  -9470000 5750000 -9470000 5905500 -12192000 5905500
-     -12192000 444500 -10287000 444500 -10287000 1815892 -11544000 1815892
-     -11544000 2096000)
-    (connect (terminal pin JOYSTICK-1) (terminal pin ESP2-18))
-   )
-   )
-   (Net NANOA4 
-   (rule
-   )
-   (wire (path BOT 25400  -4000000 734000 -5996000 734000 -5996000 -1000000)
-    (connect (terminal pin "ARDUINO NANO2"-7) (terminal pin HMC5883L-1))
-   )
-   )
-   (Net NANOA5 
-   (rule
-   )
-   (wire (path BOT 25400  -4000000 988000 -6250000 988000 -6250000 -1000000)
-    (connect (terminal pin "ARDUINO NANO2"-8) (terminal pin HMC5883L-2))
-   )
-   )
-   (Net PWM1 
-   (rule
-   )
-   (wire (path BOT 25400  -7186000 5750000 -7186000 4620725 -10000000 4620725
-     -10000000 4366000)
-    (connect (terminal pin ACCEL-2) (terminal pin ESP1-7))
-   )
-   )
-   (Net RELAY1 
-   (rule
-   )
-   (wire (path BOT 25400  -5410000 5750000 -5410000 4010818 -2286000 4010818
-     -2286000 1514100 -2480700 1514100)
-    (connect (terminal pin RELAY4-1) (terminal pin "ARDUINO NANO1"-4))
-   )
-   )
-   (Net RELAY2 
-   (rule
-   )
-   (wire (path BOT 25400  -5156000 5750000 -5156000 4699000 -2222500 4699000
-     -2222500 1260100 -2480700 1260100)
-    (connect (terminal pin RELAY4-2) (terminal pin "ARDUINO NANO1"-5))
-   )
-   )
-   (Net RELAY3 
-   (rule
-   )
-   (wire (path BOT 25400  -2480700 1006100 -2159000 1006100 -2159000 4862984
-     -4902000 4862984 -4902000 5750000)
-    (connect (terminal pin "ARDUINO NANO1"-6) (terminal pin RELAY4-3))
-   )
-   )
-   (Net RELAY4 
-   (rule
-   )
-   (wire (path BOT 25400  -2480700 752100 -2095500 752100 -2095500 5044906
-     -4648000 5044906 -4648000 5750000)
-    (connect (terminal pin "ARDUINO NANO1"-7) (terminal pin RELAY4-4))
-   )
-   )
-  )
- )
->>>>>>> a74150303ebe0733389dbdda73fa53fe1df89a02

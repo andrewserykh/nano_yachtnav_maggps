@@ -6,11 +6,11 @@
  (resolution mm 100000)
  (unit mm)
  (structure
-  (boundary (rect pcb -21.42160 -47.40160 92.45160 69.48160))
-  (boundary (path signal 0.20320 -21.32000 -47.30000 92.35000 -47.30000 92.35000 69.38000
-   -21.32000 69.38000 -21.32000 -47.30000))
+  (boundary (rect pcb -33.20965 -56.49415 128.55681 62.80160))
+  (boundary (path signal 0.20320 -14.32000 -37.30000 85.68000 -37.30000 85.68000 62.70000
+   -14.32000 62.70000 -14.32000 -37.30000))
   (flip_style mirror_first)
-  (layer TOP (type signal) (direction horizontal))
+  (layer TOP (type signal) (direction off))
   (layer I1 (type signal) (direction off))
   (layer I2 (type signal) (direction off))
   (layer I3 (type signal) (direction off))
@@ -60,12 +60,12 @@
   (component "SIL-100-06_SBX3" (place SBX3 53.39000 -14.25000 front 0))
   (component "SIL-100-06_SBX4" (place SBX4 66.03000 -32.10000 front -180))
   (component "SIL-100-05_HMC" (place HMC 2.37000 -33.12000 front 180))
-  (component "SIL-100-05_PLUG_GPS" (place PLUG_GPS 19.39200 -15.00000 front 180))
-  (component "SIL-156-04_PLUG_DI" (place PLUG_DI 60.56000 10.54000 front 180))
-  (component "SIL-156-04_PLUG_JOY" (place PLUG_JOY 41.70000 10.60000 front 180))
-  (component "SIL-156-04_PLUG_PWM" (place PLUG_PWM 79.29000 10.43000 front 180))
-  (component "SIL-156-04_PLUGPWR" (place PLUGPWR 76.74000 -12.60000 front 270))
-  (component "SIL-156-04_PLUG_RLY" (place PLUG_RLY 22.81000 10.62000 front 180))
+  (component "SIL-100-05_PLUG_GPS" (place PLUG_GPS 22.39200 -17.00000 front 180))
+  (component "SIL-156-04_PLUG_DI" (place PLUG_DI 62.06000 3.04000 front 180))
+  (component "SIL-156-04_PLUG_JOY" (place PLUG_JOY 43.20000 3.10000 front 180))
+  (component "SIL-156-04_PLUG_PWM" (place PLUG_PWM 80.79000 2.93000 front 180))
+  (component "SIL-156-04_PLUGPWR" (place PLUGPWR 76.00000 -12.60000 front 270))
+  (component "SIL-156-04_PLUG_RLY" (place PLUG_RLY 15.81000 3.12000 front 180))
  )
  (library
   (image "SIL-100-20_ESP1" (side front)
@@ -313,7 +313,7 @@
  (network
   (net "12V"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_SIGNAL
     )
@@ -322,7 +322,7 @@
   )
   (net "27"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_SIGNAL
     )
@@ -331,7 +331,7 @@
   )
   (net "3V"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_SIGNAL
     )
@@ -340,7 +340,7 @@
   )
   (net "5V"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_SIGNAL
     )
@@ -349,7 +349,7 @@
   )
   (net "DI1"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_SIGNAL
     )
@@ -358,7 +358,7 @@
   )
   (net "DI2"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_SIGNAL
     )
@@ -367,7 +367,7 @@
   )
   (net "DI3"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_SIGNAL
     )
@@ -376,7 +376,7 @@
   )
   (net "DI4"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_SIGNAL
     )
@@ -385,7 +385,7 @@
   )
   (net "ESPRX"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_SIGNAL
     )
@@ -394,7 +394,7 @@
   )
   (net "ESPTX"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_SIGNAL
     )
@@ -412,7 +412,7 @@
   )
   (net "GPSB"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_SIGNAL
     )
@@ -421,7 +421,7 @@
   )
   (net "GPSRX"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_SIGNAL
     )
@@ -430,7 +430,7 @@
   )
   (net "GPSTX"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_SIGNAL
     )
@@ -439,7 +439,7 @@
   )
   (net "JOYBTN"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_SIGNAL
     )
@@ -448,7 +448,7 @@
   )
   (net "JOYX"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_SIGNAL
     )
@@ -457,7 +457,7 @@
   )
   (net "JOYY"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_SIGNAL
     )
@@ -466,7 +466,7 @@
   )
   (net "NANOA4"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_SIGNAL
     )
@@ -475,7 +475,7 @@
   )
   (net "NANOA5"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_SIGNAL
     )
@@ -484,7 +484,7 @@
   )
   (net "PWM1"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_SIGNAL
     )
@@ -493,7 +493,7 @@
   )
   (net "RELAY1"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_SIGNAL
     )
@@ -502,7 +502,7 @@
   )
   (net "RELAY2"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_SIGNAL
     )
@@ -511,7 +511,7 @@
   )
   (net "RELAY3"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_SIGNAL
     )
@@ -520,7 +520,7 @@
   )
   (net "RELAY4"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_SIGNAL
     )
@@ -529,7 +529,7 @@
   )
   (net "RST"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_SIGNAL
     )
@@ -538,7 +538,7 @@
   )
   (net "SOLAR40V"
    (circuit
-    (use_layer TOP BOT)
+    (use_layer BOT)
     (use_via
      $VIA#0_SIGNAL
     )
@@ -548,7 +548,7 @@
   (class POWER
    "GND"
    (rule
-    (width 0.50800)
+    (width 1.52400)
     (clearance 0.38100)
     (clearance 0.25400 (type wire_via))
     (clearance 0.25400 (type wire_smd))
@@ -559,7 +559,7 @@
     (clearance 0.25400 (type via_smd))
    )
    (rule
-    (width 0.50800)
+    (width 1.52400)
     (clearance 0.38100)
     (clearance 0.25400 (type wire_via))
     (clearance 0.25400 (type wire_smd))
@@ -599,7 +599,7 @@
    "{NC}"
    "{VOID}"
    (rule
-    (width 0.50800)
+    (width 1.27000)
     (clearance 0.38100)
     (clearance 0.25400 (type wire_via))
     (clearance 0.25400 (type wire_smd))
@@ -610,7 +610,7 @@
     (clearance 0.25400 (type via_smd))
    )
    (rule
-    (width 0.50800)
+    (width 1.27000)
     (clearance 0.38100)
     (clearance 0.25400 (type wire_via))
     (clearance 0.25400 (type wire_smd))

@@ -1,0 +1,49 @@
+LABCENTER PROTEUS TOOL INFORMATION FILE
+=======================================
+
+In case of difficulty, please e-mail support@labcenter.co.uk
+
+Tool set up for Proteus layout 'nano_yachtnav_maggps_powerboard.pdsprj'.
+CADCAM generated at 10:39:37 on 9 июля 2019 г..
+
+File List
+---------
+Bottom Copper           : nano_yachtnav_maggps_powerboard - CADCAM Bottom Copper.GBR
+Top Silk Screen         : nano_yachtnav_maggps_powerboard - CADCAM Top Silk Screen.GBR
+Bottom Solder Resist    : nano_yachtnav_maggps_powerboard - CADCAM Bottom Solder Resist.GBR
+Mechanical 1            : nano_yachtnav_maggps_powerboard - CADCAM Mechanical 1.GBR
+Top Assembly            : nano_yachtnav_maggps_powerboard - CADCAM Top Assembly.GBR
+Drill, Plated, 1-16     : nano_yachtnav_maggps_powerboard - CADCAM Drill TOP-BOT Plated.GBR
+Netlist                 : nano_yachtnav_maggps_powerboard - CADCAM Netlist.IPC
+
+Photoplotter Setup
+------------------
+Format: X2, ASCII, 4.3, metric, absolute, eob=*, LZO
+Notes:  D=Diameter, S=Side, W=Width, H=Height, C=Chamfer, I=Index
+
+D10	CIRCLE  D=1.27mm                                                          DRAW  Conductor
+D11	CIRCLE  D=1.524mm                                                         DRAW  Conductor
+D12	CIRCLE  D=2.032mm                                                         FLASH ComponentPad
+D13	CIRCLE  D=3.048mm                                                         FLASH ComponentPad
+D14	CIRCLE  D=0.2032mm                                                        DRAW  Profile
+D15	CIRCLE  D=0.0635mm                                                        DRAW  NonConductor
+D16	CIRCLE  D=0.2032mm                                                        DRAW  Material
+D17	CIRCLE  D=2.286mm                                                         FLASH Material
+D18	CIRCLE  D=3.556mm                                                         FLASH Material
+D19	CIRCLE  D=0.39319mm                                                       DRAW  Material
+D70	CIRCLE  D=0.35966mm                                                       DRAW  Material
+D71	CIRCLE  D=0.38608mm                                                       DRAW  Material
+D20	CIRCLE  D=0.17159mm                                                       DRAW  Material
+D21	CIRCLE  D=0.22479mm                                                       DRAW  Material
+D22	CIRCLE  D=0.19981mm                                                       DRAW  Material
+D23	CIRCLE  D=1.016mm                                                         FLASH ComponentDrill
+D24	CIRCLE  D=1.778mm                                                         FLASH ComponentDrill
+
+Layer Stackup
+-------------
+Core                     : 1.6mm      FR4
+Bottom Copper            : 0.035mm    Copper
+Bottom Solder Resist     : 0.01016mm  Resist
+
+
+[END OF FILE]
