@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project xsi:noNamespaceSchemaLocation="Project.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Version current="2" valid="1" read="1"/>
+  <Format>Project</Format>
+  <Header>
+    <Program name="TopoR" version="5.1"/>
+    <GUID>{C0476D59-979A-47F1-B51C-BC2B12485B29}</GUID>
+    <Copyright></Copyright>
+    <Annotation>Project file</Annotation>
+    <ParentDocument/>
+    <ChangeLog/>
+  </Header>
+  <Document>
+    <LocalLibrary />
+    <Pcb>
+<File path=".\nano_yachtnav_maggps_powerboard.fsx" Folder="-1" isopened="1"/>
+    </Pcb>
+    <ARouteSessions>
+<Session name="nano_yachtnav_maggps_powerboard" date="2019-07-08 13:52:41" path=".\autoroute_nano_yachtnav_maggps_powerboard_190708135241\">
+<File path=".\autoroute_nano_yachtnav_maggps_powerboard_190708135241\nano_yachtnav_maggps_powerboard_2184-0s.fsb" Folder="-1" isopened="0"/>
+</Session>
+<Session name="nano_yachtnav_maggps_powerboard" date="2019-07-08 13:53:07" path=".\autoroute_nano_yachtnav_maggps_powerboard_190708135307\">
+<File path=".\autoroute_nano_yachtnav_maggps_powerboard_190708135307\nano_yachtnav_maggps_powerboard_2185-0s.fsb" Folder="-1" isopened="0"/>
+</Session>
+<Session name="nano_yachtnav_maggps_powerboard" date="2019-07-08 13:56:52" path=".\autoroute_nano_yachtnav_maggps_powerboard_190708135652\">
+<File path=".\autoroute_nano_yachtnav_maggps_powerboard_190708135652\nano_yachtnav_maggps_powerboard_2623-0s.fsb" Folder="-1" isopened="0"/>
+</Session>
+<Session name="nano_yachtnav_maggps_powerboard" date="2019-07-08 13:59:29" path=".\autoroute_nano_yachtnav_maggps_powerboard_190708135929\">
+<File path=".\autoroute_nano_yachtnav_maggps_powerboard_190708135929\nano_yachtnav_maggps_powerboard_2635-0s.fsb" Folder="-1" isopened="0"/>
+</Session>
+    </ARouteSessions>
+  </Document>
+</Project>

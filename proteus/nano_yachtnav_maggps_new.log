@@ -1,3 +1,19 @@
+<<<<<<< HEAD
+# Writing all output to: D:\Andrew\Arduino\nano_yachtnav_maggps\proteus\nano_yachtnav_maggps_new.log
+set pad_wire_necking on
+bus diagonal
+fanout 2
+route 8
+clean 4
+route 8 16
+clean 4
+route 8 16
+clean 4
+filter 2
+recorner diagonal
+status_file
+
+=======
 # Writing all output to: D:\Andrew\Arduino\nano_yachtnav_maggps\proteus\nano_yachtnav_maggps_new.log
 set pad_wire_necking on
 bus diagonal
@@ -19,3 +35,4 @@ clean 8
 filter 10
 status_file
 
+>>>>>>> a74150303ebe0733389dbdda73fa53fe1df89a02
