@@ -1,5 +1,6 @@
-/* v2.30
+/* v2.31
 
+!!!Внимание!!! Если bootloader не optiboot, то wdt надо закомментировать, он не работает на стандартной прошивке
 Watchdog таймер
 Простой протокол связи обмен структурой данных
 Функции управления выходными реле
@@ -19,12 +20,12 @@ LED - прием пакетов с GPS
 #define BAUD            9600  //Скорость последовательного порта
 #define LED             13    //Светоиод на Arduino
 
-#define COMPASS_COUNT   5     //Количество измерений для усреднения
+#define COMPASS_COUNT   3     //Количество измерений для усреднения
 #define COMPASS_FILTER  10    //Максимальное отклонение для отброса показаний
 
-#define T_MS_COMPASS    500    //Интервал опроса компаса
-#define T_MS_SEND       500   //Интервал отправки данных на esp
-#define T_MS_RECV       100   //Оттяжка ожидания принятого пакета
+#define T_MS_COMPASS    100   //Интервал опроса компаса
+#define T_MS_SEND       250   //Интервал отправки данных на esp
+#define T_MS_RECV       50    //Оттяжка ожидания принятого пакета
 
 #define RELAY_IN1       2     //Выходы на управление актуаторами через релейный модуль
 #define RELAY_IN2       3     //на 4 реле
@@ -76,27 +77,24 @@ long ms_send; //счетчик для отправки данных в порт
 void setup() {
   wdt_disable();
   pinMode(LED, OUTPUT); //D13 LED
-  //digitalWrite(LED, HIGH);
-
   pinMode(RELAY_IN1,OUTPUT);
+  digitalWrite(RELAY_IN1, LOW);
   pinMode(RELAY_IN2,OUTPUT);
+  digitalWrite(RELAY_IN2, LOW);
   pinMode(RELAY_IN3,OUTPUT);
+  digitalWrite(RELAY_IN3, LOW);
   pinMode(RELAY_IN4,OUTPUT);  
+  digitalWrite(RELAY_IN4, LOW);
 
   Serial.begin(9600);
   SSerialGPS.begin(9600);  
 
-  wdt_enable(WDTO_4S);  
+  wdt_enable(WDTO_1S);  
 
   compass.init();
-  //compass.read(&compass_x,&compass_y,&compass_z,&compass_hdg);
-  //for (int i=0; i<COMPASS_COUNT; i++) compass_hdg_arr[i]=compass_hdg;
+  compass.read(&compass_x,&compass_y,&compass_z,&compass_hdg);
+  for (int i=0; i<COMPASS_COUNT; i++) compass_hdg_arr[i]=compass_hdg;
 
-  digitalWrite(RELAY_IN1, LOW);
-  digitalWrite(RELAY_IN2, LOW);
-  digitalWrite(RELAY_IN3, LOW);
-  digitalWrite(RELAY_IN4, LOW);
-  //digitalWrite(LED, LOW);  
   ms_compass = ms_gps = ms_send = millis();
   wdt_reset();
 }
@@ -155,18 +153,17 @@ void loop() {
 
   if (millis() - ms_compass > T_MS_COMPASS) {
     digitalWrite(LED, HIGH);
+    
     compass.read(&compass_x,&compass_y,&compass_z,&compass_hdg);
-    /*
+    delay(10);
+    
     compass_hdg_arr[compass_arr_cnt] = compass_hdg;
     compass_arr_cnt++;
-    if (compass_arr_cnt => COMPASS_COUNT) compass_arr_cnt=0;
+    if (compass_arr_cnt >= COMPASS_COUNT) compass_arr_cnt=0;
     compass_hdg_avg=0;
     for (int i=0; i<COMPASS_COUNT; i++) compass_hdg_avg+=compass_hdg_arr[i];
-    compass_hdg_avg = compass_hdg_avg/COMPASS_COUNT;
-    */
-    compass_hdg_avg = compass_hdg;
+    compass_hdg_avg = compass_hdg_avg/COMPASS_COUNT;    
     datanano.CompassCourse = (uint16_t)compass_hdg_avg;
-    delay(50);
     ms_compass = millis();
     digitalWrite(LED, LOW);
   } //ms_compass
